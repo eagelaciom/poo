@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cine;
+package Laboratorio1;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Edwin
+ * @author Edwin Gelacio
  */
 public class Cine {
     public static boolean salir=false;
