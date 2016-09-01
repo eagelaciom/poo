@@ -1,15 +1,12 @@
-package Laboratorio1;
-
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
+ * Universidad Nacional de Colombia (Bogotá )
+ * Departamento de Ingeniería de Sistemas y Computación
+ * 
  *
- * @author Vaio
- */
+ * Laboratorio 1
+ * Ejercicio: Algoritmo1
+ * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
+*/
 class Algoritmo1 {
     void func1(){
             System.out.println("Segunda funcion");

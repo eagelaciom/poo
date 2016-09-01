@@ -1,8 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ * Universidad Nacional de Colombia (Bogotá )
+ * Departamento de Ingeniería de Sistemas y Computación
+ * 
+ *
+ * Laboratorio 1
+ * Ejercicio: GamePig
+ * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
+*/
 package Laboratorio1;
 
 import java.util.Scanner;

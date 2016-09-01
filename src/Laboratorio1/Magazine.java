@@ -1,5 +1,12 @@
-package Laboratorio1;
-
+/*
+ * Universidad Nacional de Colombia (Bogotá )
+ * Departamento de Ingeniería de Sistemas y Computación
+ * 
+ *
+ * Laboratorio 1
+ * Ejercicio: Magazine
+ * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
+*/
 
 import java.util.Scanner;
 

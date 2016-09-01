@@ -1,19 +1,15 @@
-package Laboratorio1;
-
-
+/*
+ * Universidad Nacional de Colombia (Bogotá )
+ * Departamento de Ingeniería de Sistemas y Computación
+ * 
+ *
+ * Laboratorio 1
+ * Ejercicio: LoteryGame
+ * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
+*/
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Vaio
- */
 public class LoteryGame {
     
     public static void main(String[] args) {
@@ -22,14 +18,13 @@ public class LoteryGame {
     
     
     public static void Lotery(){
-        int[] random = new int[3];
+        int[] random = new int[4];
+        int[] guess = new int[4];
         random[0] = (int)Math.floor((Math.random()*10));
         random[1] = (int)Math.floor((Math.random()*10));
         random[2] = (int)Math.floor((Math.random()*10));
-        
         System.out.println("Juego de Loteria -- Tres cifras");
         System.out.println("Numeros entre 0 y 9 digitalos de acuerdo a las instrucciones en pantalla");
-        int[] guess = new int[3];
         System.out.print("Digita el numero de la posicion 1: ");
         Scanner l = new Scanner(System.in);
         guess[0] = l.nextInt();
@@ -38,8 +33,8 @@ public class LoteryGame {
         System.out.print("Digita el numero de la posicion 3: ");
         guess[2] = l.nextInt();
         
-        System.out.println("Los numeros que ingresaste en orden son: " + Arrays.toString(guess));
-        System.out.println("Los numeros ganadores en orden son:" + Arrays.toString(random));     
+        System.out.println("Los numeros que ingresaste en orden son: " + guess[0] + guess[1] + guess[2]);
+        System.out.println("Los numeros ganadores en orden son:" + random[0] + random[1] + random[2]);    
         
         int match=0;
         if(guess[0] == random[0] || guess[0] == random[1] || guess[0] == random[2]){

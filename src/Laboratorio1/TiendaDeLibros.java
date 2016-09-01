@@ -1,5 +1,12 @@
-
-package Laboratorio1;
+/*
+ * Universidad Nacional de Colombia (Bogotá )
+ * Departamento de Ingeniería de Sistemas y Computación
+ * 
+ *
+ * Laboratorio 1
+ * Ejercicio: TiendaDeLibros
+ * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
+*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,21 +24,21 @@ public class TiendaDeLibros {
     
     public static void main(String[] args) {
 
-   nombre_libro.add("Serway");
-   nombre_libro.add("Marx");
-   nombre_libro.add("Tolkien");
-   nombre_libro.add("Thonsom");
+   nombre_libro.add("El origen de los tiempos");
+   nombre_libro.add("La catedral y el bazar");
+   nombre_libro.add("Interestelar");
+   nombre_libro.add("Objetivo 4");
    
    
-   codigo_libro.add("1234");
-   codigo_libro.add("2345");
-   codigo_libro.add("3456");
-   codigo_libro.add("4567");
+   codigo_libro.add("765543");
+   codigo_libro.add("273654");
+   codigo_libro.add("237475");
+   codigo_libro.add("984664");
    
-   precio_libro.add(150000);
-   precio_libro.add(125000);
-   precio_libro.add(200000);
-   precio_libro.add(160000);
+   precio_libro.add(80000);
+   precio_libro.add(54300);
+   precio_libro.add(238000);
+   precio_libro.add(165400);
    
    cantidad_libro.add(5);
    cantidad_libro.add(7);
@@ -63,10 +70,10 @@ public class TiendaDeLibros {
                      
         }
        
-        System.out.println("desea ingresar el carrito y/n");
+        System.out.println("desea ingresar el carro y/n");
         String opcion1 = in.next(); 
         if(opcion1.equals("y")){
-             carrito();
+             carro();
              
         }else{
             System.out.println("Secion terminada");
@@ -75,10 +82,10 @@ public class TiendaDeLibros {
    
     }
     
-    public static void carrito (){
+    public static void carro (){
         boolean existe_libro;
         int index;
-        System.out.println("1) Vender 2)Borrar 3)Atras 4)A�adir libro");
+        System.out.println("1) Vender 2)Borrar 3)Atras 4)Anadir libro");
         
         String opcion3;
         opcion3 = in.next();
@@ -125,7 +132,7 @@ public class TiendaDeLibros {
                 
                 if (cantidad_libro.get(index)==0){
                      System.out.println("No esta disponible el libro");
-                     carrito();
+                     carro();
                 }
                 
                 if (carrito_compras_codigo.contains(codigo_venta)){
@@ -139,20 +146,20 @@ public class TiendaDeLibros {
                 }
                 
                 cantidad_libro.set(index, cantidad_libro.get(index)-1);
-                System.out.println("Libro "+nombre_libro.get(index)+" a�adido al carrito");
-                carrito();
+                System.out.println("Libro "+nombre_libro.get(index)+" anadido al carro");
+                carro();
             }
             
             else {
             System.out.println("No existe el libro");
-            carrito();
+            carro();
             
             }
            
         }
         
         if(opcion3.equals("2")){
-            System.out.println("Estos son los libros de su carrito");
+            System.out.println("Estos son los libros de su carro");
             
              for(int i=0;i<carrito_compras_codigo.size();i++){
             
@@ -160,7 +167,7 @@ public class TiendaDeLibros {
                       
         }
             
-            System.out.println("Digite el codigo del libro que quiere borrar del carrito");
+            System.out.println("Digite el codigo del libro que quiere borrar del carro");
             
             String codigo_borrar=in.next();
             
@@ -179,12 +186,12 @@ public class TiendaDeLibros {
                      
             }
              
-             carrito();
+             carro();
         }
             else {
                 
-         System.out.println("El libro no existe en el carrito de compras");
-         carrito();
+         System.out.println("El libro no existe en el carro de compras");
+         carro();
             }
  
     }
@@ -238,7 +245,7 @@ public class TiendaDeLibros {
         }
          
          else {System.out.println("Ya exite un libro con ese codigo");}
-      anadir_libro();
+            anadir_libro();
            
     }
     
