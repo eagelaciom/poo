@@ -4,7 +4,7 @@
  * 
  *
  * Laboratorio 1
- * Ejercicio: GamePig
+ * Ejercicio: Cine
  * Autores coolaboradores: Edwin Gelacio eagelaciom@unal.edu.co - Daniel Chaparro daachaparroga@unal.edu.co
 */
 package Laboratorio1;
